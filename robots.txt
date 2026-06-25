@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/sitemap.xml
