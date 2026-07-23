@@ -3,420 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Daud Murtaza Rind is a freelance Laravel developer and software engineer in Karachi, Pakistan, specializing in custom software development, business process automation, workflow automation, HRMS systems, dashboards, SDLC, and internal tools.">
-  <meta name="theme-color" content="#0F172A">
-  <title>Daud Murtaza Rind | Custom Software Development & Process Automation</title>
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Daud Murtaza Rind builds custom Laravel applications, HRMS platforms, dashboards, workflow automation, and business software for teams in Pakistan and worldwide.">
+  <meta name="keywords" content="Laravel developer Karachi, freelance software engineer Pakistan, custom business software, process automation, workflow automation, HRMS developer, PHP MySQL developer, dashboard development, API integration">
+  <meta name="author" content="Daud Murtaza Rind">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#07111F">
+  <title>Daud Murtaza Rind | Laravel Developer & Business Software Engineer</title>
+
   <link rel="canonical" href="https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Daud Murtaza Rind | Custom Software Development & Process Automation">
-  <meta property="og:description" content="Freelance Laravel developer in Karachi specializing in custom software development, business process automation, workflow automation, HRMS systems, dashboards, SDLC, and internal tools.">
+  <meta property="og:locale" content="en_PK">
+  <meta property="og:title" content="Daud Murtaza Rind | Business Software Engineer">
+  <meta property="og:description" content="Custom Laravel applications, HRMS platforms, dashboards, workflow automation, and integrations built around how your business works.">
   <meta property="og:url" content="https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/">
-  <meta property="og:site_name" content="Daud Murtaza Rind Portfolio">
+  <meta property="og:site_name" content="Daud Murtaza Rind">
+  <meta property="og:image" content="https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/assets/daud-murtaza-rind-social.png">
+  <meta property="og:image:width" content="1732">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="Daud Murtaza Rind, business software engineer specializing in Laravel, HRMS, and process automation">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Daud Murtaza Rind | Custom Software Development & Process Automation">
-  <meta name="twitter:description" content="Freelance Laravel developer in Karachi specializing in custom software development, business process automation, workflow automation, HRMS systems, dashboards, SDLC, and internal tools.">
+  <meta name="twitter:title" content="Daud Murtaza Rind | Business Software Engineer">
+  <meta name="twitter:description" content="I build Laravel software that simplifies operations, workflows, reporting, and HR processes.">
+  <meta name="twitter:image" content="https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/assets/daud-murtaza-rind-social.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            base: "#0F172A",
-            panel: "#111C34",
-            line: "rgba(148, 163, 184, 0.16)",
-            accent: "#38BDF8"
+            ink: "#07111F",
+            paper: "#F5F3EE",
+            electric: "#087EC1",
+            sky: "#BFE8FF",
+            mist: "#DFE7EC"
           },
           fontFamily: {
-            sans: ["Inter", "sans-serif"]
-          },
-          boxShadow: {
-            glow: "0 0 0 1px rgba(56, 189, 248, 0.12), 0 20px 45px rgba(15, 23, 42, 0.45)"
+            display: ["Space Grotesk", "sans-serif"],
+            body: ["IBM Plex Sans", "sans-serif"],
+            mono: ["IBM Plex Mono", "monospace"]
           }
         }
       }
     };
   </script>
   <style>
-    html {
-      scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    body { background: #f5f3ee; }
+    .grid-lines {
+      background-image:
+        linear-gradient(rgba(7, 17, 31, .055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(7, 17, 31, .055) 1px, transparent 1px);
+      background-size: 32px 32px;
     }
-
-    body {
-      background:
-        radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 28%),
-        linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
-    }
-
-    .fade-in {
+    .fade-up {
       opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+      transform: translateY(20px);
+      transition: opacity .7s ease, transform .7s ease;
     }
-
-    .fade-in.is-visible {
-      opacity: 1;
-      transform: translateY(0);
+    .fade-up.is-visible { opacity: 1; transform: translateY(0); }
+    .portrait-mask { clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 12%); }
+    .nav-scrolled { border-color: rgba(7, 17, 31, .14); background: rgba(245, 243, 238, .94); }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .fade-up { opacity: 1; transform: none; transition: none; }
     }
   </style>
+
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Daud Murtaza Rind",
-      "jobTitle": "Freelance Software Engineer and Laravel Developer",
-      "url": "https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/",
-      "email": "mailto:daud21111987@gmail.com",
-      "telephone": "+92 334 8965346",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Karachi",
-        "addressCountry": "PK"
-      },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Shipping Company"
-      },
-      "knowsAbout": [
-        "Laravel",
-        "PHP",
-        "Livewire",
-        "React",
-        "MySQL",
-        "Custom Software Development",
-        "Software Development",
-        "Process Automation",
-        "Business Process Automation",
-        "Workflow Automation",
-        "Internal Tools Development",
-        "SDLC",
-        "Project Management",
-        "Stakeholder Management",
-        "Requirement Analysis",
-        "Business Process Design",
-        "Logic Building",
-        "Problem Solving",
-        "HRMS",
-        "Approval Workflows",
-        "Business Software",
-        "Dashboard Development",
-        "API Integrations"
-      ],
-      "sameAs": [
-        "https://github.com/DaudMurtazaRind/"
-      ]
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daud Murtaza Rind",
+    "jobTitle": "Business Software Engineer and Laravel Developer",
+    "url": "https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/",
+    "image": "https://daudmurtazarind.github.io/daud-murtaza-rind-portfolio/assets/daud-murtaza-rind-portrait.jpg",
+    "email": "mailto:daud21111987@gmail.com",
+    "telephone": "+92 334 8965346",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    },
+    "sameAs": [
+      "https://github.com/DaudMurtazaRind",
+      "https://www.linkedin.com/in/daudmurtazarind/"
+    ],
+    "knowsAbout": [
+      "Laravel", "PHP", "MySQL", "Livewire", "React", "HRMS", "Process Automation",
+      "Workflow Automation", "Software Development Life Cycle", "REST APIs", "SOAP APIs"
+    ]
+  }
   </script>
 </head>
-<body class="font-sans text-white antialiased">
-  <div class="min-h-screen">
-    <header id="site-header" class="sticky top-0 z-50 border-b border-transparent bg-slate-950/70 backdrop-blur-xl transition-all duration-300">
-      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#home" class="text-sm font-semibold uppercase tracking-[0.2em] text-white">Daud Murtaza Rind</a>
-
-        <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-md border border-white/10 px-3 py-2 text-slate-200 md:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-
-        <div class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-          <a class="transition hover:text-accent" href="#about">About</a>
-          <a class="transition hover:text-accent" href="#services">Services</a>
-          <a class="transition hover:text-accent" href="#work">Work</a>
-          <a class="transition hover:text-accent" href="#process">Process</a>
-          <a class="transition hover:text-accent" href="#contact">Contact</a>
-        </div>
-      </nav>
-
-      <div id="mobile-menu" class="hidden border-t border-white/10 px-6 pb-4 md:hidden">
-        <div class="flex flex-col gap-3 pt-4 text-sm text-slate-300">
-          <a class="transition hover:text-accent" href="#about">About</a>
-          <a class="transition hover:text-accent" href="#services">Services</a>
-          <a class="transition hover:text-accent" href="#work">Work</a>
-          <a class="transition hover:text-accent" href="#process">Process</a>
-          <a class="transition hover:text-accent" href="#contact">Contact</a>
-        </div>
+<body class="font-body text-ink antialiased selection:bg-sky selection:text-ink">
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-colors duration-300">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12" aria-label="Main navigation">
+      <a href="#top" class="font-display text-lg font-bold tracking-tight sm:text-xl" aria-label="Daud Murtaza Rind home">
+        Daud Murtaza Rind<span class="text-electric">.</span>
+      </a>
+      <div class="hidden items-center gap-7 font-mono text-xs uppercase tracking-[0.16em] md:flex">
+        <a class="transition-colors hover:text-electric" href="#about">About</a>
+        <a class="transition-colors hover:text-electric" href="#services">Services</a>
+        <a class="transition-colors hover:text-electric" href="#work">Work</a>
+        <a class="transition-colors hover:text-electric" href="#process">Process</a>
+        <a class="border border-ink px-4 py-2.5 transition-colors hover:bg-ink hover:text-white" href="#contact">Start a project</a>
       </div>
-    </header>
+      <button id="menu-button" class="grid h-10 w-10 place-items-center border border-ink/20 md:hidden" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-ink/10 bg-paper px-5 py-5 md:hidden">
+      <div class="flex flex-col gap-5 font-mono text-sm uppercase tracking-[0.14em]">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <main id="home">
-      <section class="mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-8 lg:pb-28 lg:pt-28">
-        <div class="fade-in max-w-5xl">
-          <p class="mb-5 text-sm font-medium uppercase tracking-[0.35em] text-accent">Freelance Software Engineer</p>
-          <h1 class="max-w-4xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-            Custom software development for process automation and business workflows.
+  <main id="top">
+    <section class="grid-lines relative overflow-hidden border-b border-ink/15 pt-20">
+      <div class="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-stretch lg:grid-cols-12">
+        <div class="flex flex-col justify-center px-5 py-16 sm:px-8 lg:col-span-7 lg:px-12 lg:py-24">
+          <div class="fade-up mb-8 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.18em] text-electric">
+            <span class="h-2 w-2 bg-electric"></span>
+            Laravel developer · Business software engineer
+          </div>
+          <h1 class="fade-up font-display text-[clamp(3.25rem,8.5vw,7.75rem)] font-bold leading-[0.84] tracking-[-0.065em]">
+            Daud<br>Murtaza<br>Rind<span class="text-electric">.</span>
           </h1>
-          <p class="mt-6 max-w-4xl text-lg leading-8 text-slate-300 sm:text-xl">
-            I help businesses turn scattered requirements, manual workflows, and complex operational rules into reliable web applications, HRMS modules, dashboards, approval systems, and process automation tools.
+          <p class="fade-up mt-9 max-w-2xl font-display text-2xl font-medium leading-tight tracking-[-0.025em] sm:text-3xl lg:text-4xl">
+            I build software that runs your business, not software that creates more work.
           </p>
-          <p class="mt-5 max-w-3xl text-base leading-7 text-slate-400">
-            Laravel developer in Karachi with strengths in software development, SDLC, stakeholder communication, project planning, logic building, problem solving, workflow automation, and business process design.
+          <p class="fade-up mt-6 max-w-xl text-base leading-7 text-ink/65 sm:text-lg">
+            Custom Laravel applications, HRMS platforms, dashboards, and workflow automation for teams ready to move beyond spreadsheets and manual follow-ups.
           </p>
-          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-300">
-              Start a Conversation
+          <div class="fade-up mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-electric px-6 py-3.5 font-mono text-xs font-medium uppercase tracking-[0.14em] text-white transition-colors hover:bg-ink">
+              Discuss a project <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
             </a>
-            <a href="#work" class="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-accent hover:text-accent">
-              See What I Build
-            </a>
-          </div>
-          <p class="mt-8 text-sm text-slate-400">
-            Karachi, Pakistan - available for remote and local freelance projects
-          </p>
-        </div>
-      </section>
-
-      <section id="about" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-          <div class="fade-in max-w-3xl">
-            <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">About</p>
-            <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">About Me</h2>
-            <div class="mt-6 space-y-5 text-base leading-8 text-slate-300">
-              <p>
-                I'm Daud - a software engineer based in Karachi with 5 years of professional experience building practical web-based systems for real business environments.
-              </p>
-              <p>
-                I currently work as a Laravel developer at a shipping company, where I help build and maintain a full HRMS system involving employee data, attendance, leave, payroll, approvals, reporting, and operational workflows.
-              </p>
-              <p>
-                My strongest work sits between business and engineering. I understand stakeholder requirements, map real workflows, break problems into manageable modules, and translate complex rules into clean application logic.
-              </p>
-              <p>
-                I think through the full SDLC: requirement gathering, planning, database structure, development, testing, delivery, and improvement. That helps me build software that is not only functional, but practical for teams to use every day.
-              </p>
-              <p>
-                I'm now taking on freelance projects for businesses that need custom software development, process automation, workflow automation, internal tools, better reporting, or improvements to existing web applications.
-              </p>
-            </div>
-          </div>
-
-          <div class="fade-in rounded-[2rem] border border-line bg-white/[0.04] p-8 shadow-glow">
-            <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">Core Specialties</p>
-            <p class="mt-6 text-lg leading-8 text-slate-200">
-              Software Development / Process Automation / Workflow Automation / SDLC / Project Management / Stakeholder Management / Requirement Analysis / Logic Building / Problem Solving / Business Process Design / Laravel / PHP / MySQL
-            </p>
-            <div class="mt-8 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-white/10 bg-slate-950/35 p-5">
-                <p class="text-sm font-semibold text-white">Current Focus</p>
-                <p class="mt-2 text-sm leading-7 text-slate-300">Building HRMS, payroll, attendance, approval, and reporting workflows in a real company environment.</p>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-slate-950/35 p-5">
-                <p class="text-sm font-semibold text-white">Delivery Style</p>
-                <p class="mt-2 text-sm leading-7 text-slate-300">Clear requirements, practical planning, maintainable logic, and steady communication from idea to launch.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div class="fade-in mb-12 max-w-3xl">
-          <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">Services</p>
-          <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">What I Can Build For You</h2>
-          <p class="mt-4 text-base leading-7 text-slate-300">
-            Software development and process automation support for businesses that need structure, better workflows, cleaner data, and systems people can actually use.
-          </p>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">Custom Software Development</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Full-featured web applications designed around your users, stakeholder requirements, operational data, business rules, and long-term goals.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">HRMS &amp; Employee Workflows</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Employee records, attendance, leave, payroll logic, approvals, reporting, and HR operations built around your actual company process.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">Business Process Automation</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Role-based workflows with status tracking, notifications, permissions, audit history, and clear rules for how work moves forward.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">Dashboards &amp; Reporting</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Clean dashboards, useful filters, management summaries, exports, and reporting flows that make business information easier to act on.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">Internal Tools &amp; Workflow Portals</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Private systems for teams, employees, vendors, or customers to submit, review, approve, track, and manage important information.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">API Integrations &amp; Automation</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Connecting internal software with third-party platforms, reporting tools, payment services, external APIs, and existing business systems.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">MVP Planning &amp; Project Scoping</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Breaking an idea into screens, features, roles, database structure, priorities, and a practical first version that can be built sensibly.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7 shadow-glow">
-            <h3 class="text-xl font-semibold text-white">Existing Software Support</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Bug fixing, feature additions, performance improvements, database cleanup, logic correction, and modernization of existing applications.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="work" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div class="fade-in mb-12 max-w-3xl">
-          <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">Work &amp; Experience</p>
-          <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">The kind of engineering work I bring to your project</h2>
-          <p class="mt-4 text-base leading-7 text-slate-300">
-            My experience is rooted in real internal business software where requirements, people, data, logic, and delivery all matter.
-          </p>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/55 p-7">
-            <h3 class="text-lg font-semibold text-white">HRMS System Development</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Hands-on work on HRMS modules involving employee records, attendance, leave, payroll, approvals, reporting, and daily HR operations.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/55 p-7">
-            <h3 class="text-lg font-semibold text-white">SDLC &amp; Requirement Analysis</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Understanding requirements, clarifying scope, planning modules, thinking through edge cases, and moving work through development and delivery.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/55 p-7">
-            <h3 class="text-lg font-semibold text-white">Stakeholder Communication</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Working with business users and decision makers to understand what they need, what is unclear, and what should be prioritized first.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/55 p-7">
-            <h3 class="text-lg font-semibold text-white">Business Logic &amp; Problem Solving</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Turning rules, calculations, approvals, exceptions, and real-world conditions into reliable backend logic and database structure.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/55 p-7">
-            <h3 class="text-lg font-semibold text-white">Process Building</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Mapping how work currently happens, finding gaps, and designing cleaner digital flows for records, requests, approvals, and reporting.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/55 p-7">
-            <h3 class="text-lg font-semibold text-white">Reporting &amp; System Operations</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Creating useful dashboards, filters, exports, summaries, and operational views that help teams understand what is happening quickly.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="help" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div class="fade-in mb-12 max-w-3xl">
-          <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">How I Can Help</p>
-          <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">Practical support across software development, process automation, planning, and delivery.</h2>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold text-white">Clarify Requirements</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">I can help you turn a rough idea or unclear business need into structured requirements, user roles, modules, and practical priorities.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold text-white">Plan the First Version</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Not sure where to start? I can help break the project into features, screens, database structure, milestones, and a realistic MVP.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold text-white">Build the Business Logic</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">I focus on rules, calculations, validations, permissions, status flows, and edge cases so the system behaves correctly in real use.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold text-white">Automate Manual Processes</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">Replace Excel sheets, paper records, WhatsApp follow-ups, and scattered manual work with a cleaner, trackable digital workflow.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold text-white">Manage Stakeholder Flow</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">I help translate business feedback into clear development tasks, reduce confusion, and keep the project focused on useful outcomes.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold text-white">Improve Existing Systems</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">If your current application is slow, buggy, confusing, or missing features, I can help improve it step by step without disrupting operations.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="process" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div class="fade-in mb-12 max-w-3xl">
-          <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">Process</p>
-          <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">A practical SDLC approach from idea to delivery</h2>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/45 p-7">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">01</p>
-            <h3 class="mt-4 text-lg font-semibold text-white">Understand Stakeholders</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">We start by understanding the people involved, the decisions they make, and the actual business problem the software needs to solve.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/45 p-7">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">02</p>
-            <h3 class="mt-4 text-lg font-semibold text-white">Map the Process</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">I map the workflow, identify bottlenecks, clarify business rules, and shape the logic before jumping into screens and code.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/45 p-7">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">03</p>
-            <h3 class="mt-4 text-lg font-semibold text-white">Plan &amp; Build</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">The project is broken into useful modules, then built with clean database structure, practical UI, reliable validation, and maintainable Laravel logic.</p>
-          </article>
-          <article class="fade-in rounded-3xl border border-line bg-slate-900/45 p-7">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">04</p>
-            <h3 class="mt-4 text-lg font-semibold text-white">Test, Deliver &amp; Improve</h3>
-            <p class="mt-4 text-sm leading-7 text-slate-300">After testing and launch, I help refine workflows, fix gaps, and improve the system based on real team usage and feedback.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div class="fade-in rounded-[2rem] border border-line bg-white/[0.04] px-8 py-12 sm:px-10 lg:px-14">
-          <p class="text-sm font-medium uppercase tracking-[0.3em] text-accent">Contact</p>
-          <h2 class="mt-4 max-w-2xl text-3xl font-semibold text-white sm:text-4xl">Ready to automate a business process with custom software?</h2>
-          <p class="mt-5 max-w-3xl text-base leading-8 text-slate-300">
-            Got a project idea, HRMS requirement, process automation need, approval workflow, dashboard, or existing system that needs improvement? Reach out and let's talk through the problem, the stakeholders, the logic, and the first practical version.
-          </p>
-          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a href="mailto:daud21111987@gmail.com" class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-300">
-              Send an Email
-            </a>
-            <a href="https://wa.me/923348965346" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-accent hover:text-accent">
-              Message on WhatsApp
+            <a href="#work" class="inline-flex items-center justify-center gap-2 border border-ink px-6 py-3.5 font-mono text-xs font-medium uppercase tracking-[0.14em] transition-colors hover:bg-ink hover:text-white">
+              See selected work <i data-lucide="arrow-down" class="h-4 w-4"></i>
             </a>
           </div>
-          <p class="mt-6 text-sm text-slate-400">Karachi, Pakistan - available for remote work worldwide</p>
+          <p class="fade-up mt-8 flex items-center gap-2 font-mono text-xs text-ink/55">
+            <i data-lucide="map-pin" class="h-4 w-4 text-electric"></i> Karachi, Pakistan · Available locally and worldwide
+          </p>
         </div>
-      </section>
-    </main>
-
-    <footer class="border-t border-white/10">
-      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-        <div>
-          <p class="font-semibold text-slate-200">Daud Murtaza Rind - Freelance Software Engineer</p>
-          <div class="mt-2 flex flex-col gap-1 sm:flex-row sm:gap-4">
-            <a class="transition hover:text-accent" href="mailto:daud21111987@gmail.com">daud21111987@gmail.com</a>
-            <a class="transition hover:text-accent" href="https://wa.me/923348965346" target="_blank" rel="noopener noreferrer">+92 334 8965346</a>
+        <div class="relative min-h-[520px] overflow-hidden bg-electric lg:col-span-5 lg:min-h-0">
+          <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,17,31,.08)_25%,transparent_25%,transparent_50%,rgba(7,17,31,.08)_50%,rgba(7,17,31,.08)_75%,transparent_75%)] bg-[length:24px_24px]"></div>
+          <img src="assets/daud-murtaza-rind-portrait.jpg" alt="Portrait of Daud Murtaza Rind, Laravel developer and business software engineer" class="portrait-mask absolute inset-x-5 bottom-0 h-[94%] w-[calc(100%-2.5rem)] object-cover object-top shadow-2xl sm:inset-x-10 sm:w-[calc(100%-5rem)] lg:inset-x-8 lg:w-[calc(100%-4rem)]" width="1200" height="1200" fetchpriority="high">
+          <div class="absolute bottom-5 left-5 bg-ink px-4 py-3 font-mono text-[10px] uppercase tracking-[0.18em] text-white sm:bottom-8 sm:left-8">
+            Building useful systems since 2022
           </div>
         </div>
-        <p>&copy; 2026 Daud Murtaza Rind. All rights reserved.</p>
       </div>
-    </footer>
-  </div>
+      <div class="border-t border-ink/15 bg-paper/90">
+        <div class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-y divide-ink/15 sm:grid-cols-4 sm:divide-y-0">
+          <div class="px-5 py-5 sm:px-8"><strong class="block font-display text-2xl">4+ years</strong><span class="text-sm text-ink/55">Business software</span></div>
+          <div class="px-5 py-5 sm:px-8"><strong class="block font-display text-2xl">5 years</strong><span class="text-sm text-ink/55">Enterprise IT before dev</span></div>
+          <div class="px-5 py-5 sm:px-8"><strong class="block font-display text-2xl">3 regions</strong><span class="text-sm text-ink/55">Pakistan, Dubai, Malaysia</span></div>
+          <div class="px-5 py-5 sm:px-8"><strong class="block font-display text-2xl">End-to-end</strong><span class="text-sm text-ink/55">Requirements to delivery</span></div>
+        </div>
+      </div>
+    </section>
 
+    <section id="about" class="scroll-mt-20 border-b border-ink/15 bg-white py-24 sm:py-32">
+      <div class="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
+        <div class="fade-up lg:col-span-4">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-electric">01 / About</p>
+          <h2 class="mt-5 font-display text-4xl font-bold leading-[1.02] tracking-[-0.045em] sm:text-5xl">Engineering grounded in how businesses actually work.</h2>
+        </div>
+        <div class="fade-up lg:col-span-7 lg:col-start-6">
+          <p class="font-display text-2xl leading-snug tracking-[-0.025em] sm:text-3xl">
+            For more than four years, I have been building and maintaining internal software at a shipping company in Karachi, including a full HRMS used across day-to-day operations.
+          </p>
+          <div class="mt-8 grid gap-6 text-base leading-7 text-ink/65 sm:grid-cols-2">
+            <p>My work covers employee records, attendance, leave, payroll with automated tax calculations, approvals, reporting, and operational workflows. I work across the full lifecycle: process mapping, requirements, architecture, implementation, testing, and improvement.</p>
+            <p>Before software development, I spent five years as an IT Officer at Askari Bank supporting enterprise systems across branches. That background shaped how I think about reliability, users, stakeholders, and the realities around production software.</p>
+          </div>
+          <div class="mt-10 border-l-4 border-electric bg-paper p-6 sm:p-8">
+            <p class="font-display text-xl font-semibold">My strongest skill is not a framework.</p>
+            <p class="mt-2 leading-7 text-ink/65">It is turning an unclear business problem into a structured, maintainable system that people can use with confidence.</p>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-2">
+            <span class="border border-ink/15 px-3 py-2 font-mono text-xs">Laravel</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">PHP</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">MySQL</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">Livewire</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">React</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">REST / SOAP APIs</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">SDLC</span><span class="border border-ink/15 px-3 py-2 font-mono text-xs">Stakeholder management</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-mt-20 bg-ink py-24 text-white sm:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="fade-up max-w-3xl">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky">02 / Services</p>
+          <h2 class="mt-5 font-display text-4xl font-bold tracking-[-0.045em] sm:text-6xl">Software built around the work, not the other way around.</h2>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/60">From a first idea to a production system, I help teams structure requirements, automate operations, and build software that stays useful.</p>
+        </div>
+        <div class="mt-16 grid border-l border-t border-white/15 md:grid-cols-2 lg:grid-cols-3">
+          <article class="fade-up border-b border-r border-white/15 p-7 sm:p-9"><i data-lucide="blocks" class="h-7 w-7 text-sky"></i><h3 class="mt-12 font-display text-2xl font-semibold">Custom Business Applications</h3><p class="mt-4 leading-7 text-white/55">Purpose-built web applications for your specific idea, workflow, or operational requirement.</p></article>
+          <article class="fade-up border-b border-r border-white/15 p-7 sm:p-9"><i data-lucide="users" class="h-7 w-7 text-sky"></i><h3 class="mt-12 font-display text-2xl font-semibold">HRMS & Employee Workflows</h3><p class="mt-4 leading-7 text-white/55">Employee lifecycle, attendance, leave, payroll, approvals, and HR reporting in one structured system.</p></article>
+          <article class="fade-up border-b border-r border-white/15 p-7 sm:p-9"><i data-lucide="chart-no-axes-combined" class="h-7 w-7 text-sky"></i><h3 class="mt-12 font-display text-2xl font-semibold">Dashboards & Reporting</h3><p class="mt-4 leading-7 text-white/55">Practical dashboards, filters, summaries, and exports that turn operational data into clear decisions.</p></article>
+          <article class="fade-up border-b border-r border-white/15 p-7 sm:p-9"><i data-lucide="workflow" class="h-7 w-7 text-sky"></i><h3 class="mt-12 font-display text-2xl font-semibold">Process Automation</h3><p class="mt-4 leading-7 text-white/55">Replace spreadsheets, paper records, and manual follow-ups with accountable digital workflows.</p></article>
+          <article class="fade-up border-b border-r border-white/15 p-7 sm:p-9"><i data-lucide="plug-zap" class="h-7 w-7 text-sky"></i><h3 class="mt-12 font-display text-2xl font-semibold">API & System Integrations</h3><p class="mt-4 leading-7 text-white/55">Connect payment services, banks, third-party platforms, and internal tools through reliable data flows.</p></article>
+          <article class="fade-up border-b border-r border-white/15 p-7 sm:p-9"><i data-lucide="wrench" class="h-7 w-7 text-sky"></i><h3 class="mt-12 font-display text-2xl font-semibold">Legacy System Support</h3><p class="mt-4 leading-7 text-white/55">Fix bugs, add features, improve performance, and modernize applications without disrupting operations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="scroll-mt-20 border-b border-ink/15 bg-paper py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="fade-up grid gap-6 lg:grid-cols-2">
+          <div><p class="font-mono text-xs uppercase tracking-[0.2em] text-electric">03 / Selected work</p><h2 class="mt-5 font-display text-4xl font-bold tracking-[-0.045em] sm:text-6xl">Real systems.<br>Measurable results.</h2></div>
+          <p class="max-w-xl self-end text-lg leading-8 text-ink/60">A selection of complex business problems I have helped turn into stable, useful software.</p>
+        </div>
+        <div class="mt-16 border-t border-ink/20">
+          <article class="fade-up grid gap-6 border-b border-ink/20 py-9 lg:grid-cols-12 lg:items-start"><span class="font-mono text-xs text-electric lg:col-span-1">01</span><div class="lg:col-span-4"><h3 class="font-display text-2xl font-semibold">Multi-region HRMS overhaul</h3><p class="mt-3 text-sm leading-6 text-ink/55">Onboarding · Attendance · Leave · Payroll · Tax · Approvals</p></div><p class="leading-7 text-ink/65 lg:col-span-4">Built and evolved a full employee operations platform around the shipping company’s real processes.</p><div class="border-l-2 border-electric pl-4 lg:col-span-3"><span class="font-mono text-[10px] uppercase tracking-[0.18em] text-electric">Result</span><p class="mt-2 font-medium">Replaced fragmented Excel and WhatsApp workflows across Pakistan, Dubai, and Malaysia.</p></div></article>
+          <article class="fade-up grid gap-6 border-b border-ink/20 py-9 lg:grid-cols-12 lg:items-start"><span class="font-mono text-xs text-electric lg:col-span-1">02</span><div class="lg:col-span-4"><h3 class="font-display text-2xl font-semibold">Production HRMS consolidation</h3><p class="mt-3 text-sm leading-6 text-ink/55">Schema alignment · Data mapping · Conflict resolution</p></div><p class="leading-7 text-ink/65 lg:col-span-4">Planned and executed the merger of two live HRMS databases while coordinating data rules and stakeholders.</p><div class="border-l-2 border-electric pl-4 lg:col-span-3"><span class="font-mono text-[10px] uppercase tracking-[0.18em] text-electric">Result</span><p class="mt-2 font-medium">One unified source of truth with zero downtime and no data loss.</p></div></article>
+          <article class="fade-up grid gap-6 border-b border-ink/20 py-9 lg:grid-cols-12 lg:items-start"><span class="font-mono text-xs text-electric lg:col-span-1">03</span><div class="lg:col-span-4"><h3 class="font-display text-2xl font-semibold">Banking API integration</h3><p class="mt-3 text-sm leading-6 text-ink/55">SOAP · Transactions · Payments · Reconciliation</p></div><p class="leading-7 text-ink/65 lg:col-span-4">Integrated banking services into internal workflows for controlled transaction and payment data exchange.</p><div class="border-l-2 border-electric pl-4 lg:col-span-3"><span class="font-mono text-[10px] uppercase tracking-[0.18em] text-electric">Result</span><p class="mt-2 font-medium">Automated entry and reconciliation with timely, consistent data.</p></div></article>
+          <article class="fade-up grid gap-6 border-b border-ink/20 py-9 lg:grid-cols-12 lg:items-start"><span class="font-mono text-xs text-electric lg:col-span-1">04</span><div class="lg:col-span-4"><h3 class="font-display text-2xl font-semibold">Operational dashboards</h3><p class="mt-3 text-sm leading-6 text-ink/55">Filters · Exports · Summaries · Performance views</p></div><p class="leading-7 text-ink/65 lg:col-span-4">Designed reporting interfaces that make high-volume operational information easier to understand and act on.</p><div class="border-l-2 border-electric pl-4 lg:col-span-3"><span class="font-mono text-[10px] uppercase tracking-[0.18em] text-electric">Result</span><p class="mt-2 font-medium">Faster decisions and less dependence on manual spreadsheet tracking.</p></div></article>
+          <article class="fade-up grid gap-6 border-b border-ink/20 py-9 lg:grid-cols-12 lg:items-start"><span class="font-mono text-xs text-electric lg:col-span-1">05</span><div class="lg:col-span-4"><h3 class="font-display text-2xl font-semibold">Approval workflow platform</h3><p class="mt-3 text-sm leading-6 text-ink/55">Roles · Multi-step approvals · Status tracking · Auditability</p></div><p class="leading-7 text-ink/65 lg:col-span-4">Structured role-based workflows for finance, HR, and operations with clear ownership at every step.</p><div class="border-l-2 border-electric pl-4 lg:col-span-3"><span class="font-mono text-[10px] uppercase tracking-[0.18em] text-electric">Result</span><p class="mt-2 font-medium">Fewer bottlenecks, clearer accountability, and visible progress.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-24 sm:py-32" aria-labelledby="help-heading">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="fade-up max-w-3xl"><p class="font-mono text-xs uppercase tracking-[0.2em] text-electric">04 / How I can help</p><h2 id="help-heading" class="mt-5 font-display text-4xl font-bold tracking-[-0.045em] sm:text-6xl">Start where your problem is.</h2><p class="mt-6 text-lg leading-8 text-ink/60">Practical support for a new idea, a manual process, or an existing software system that needs attention.</p></div>
+        <div class="mt-14 grid gap-px bg-ink/15 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="fade-up bg-white p-7 sm:p-9"><span class="font-mono text-xs text-electric">01</span><h3 class="mt-8 font-display text-2xl font-semibold">Build a New System</h3><p class="mt-4 leading-7 text-ink/60">Turn an idea, workflow, or manual process into a structured web application built for your team.</p></article>
+          <article class="fade-up bg-white p-7 sm:p-9"><span class="font-mono text-xs text-electric">02</span><h3 class="mt-8 font-display text-2xl font-semibold">Improve an Existing App</h3><p class="mt-4 leading-7 text-ink/60">Address slow performance, bugs, outdated code, or missing features one practical step at a time.</p></article>
+          <article class="fade-up bg-white p-7 sm:p-9"><span class="font-mono text-xs text-electric">03</span><h3 class="mt-8 font-display text-2xl font-semibold">Digitize Manual Work</h3><p class="mt-4 leading-7 text-ink/60">Replace Excel sheets, paper records, and scattered follow-ups with one clear digital workflow.</p></article>
+          <article class="fade-up bg-white p-7 sm:p-9"><span class="font-mono text-xs text-electric">04</span><h3 class="mt-8 font-display text-2xl font-semibold">Create Dashboards</h3><p class="mt-4 leading-7 text-ink/60">Turn your data into filters, summaries, reports, and views that help your team see what matters.</p></article>
+          <article class="fade-up bg-white p-7 sm:p-9"><span class="font-mono text-xs text-electric">05</span><h3 class="mt-8 font-display text-2xl font-semibold">Connect Your Systems</h3><p class="mt-4 leading-7 text-ink/60">Integrate APIs, payment services, reporting tools, and internal systems so information moves reliably.</p></article>
+          <article class="fade-up bg-white p-7 sm:p-9"><span class="font-mono text-xs text-electric">06</span><h3 class="mt-8 font-display text-2xl font-semibold">Plan the First Version</h3><p class="mt-4 leading-7 text-ink/60">Break an idea into features, screens, database structure, and a realistic first release before development starts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="scroll-mt-20 border-y border-ink/15 bg-sky py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="fade-up grid gap-6 lg:grid-cols-2"><div><p class="font-mono text-xs uppercase tracking-[0.2em] text-electric">05 / Process</p><h2 class="mt-5 font-display text-4xl font-bold tracking-[-0.045em] sm:text-6xl">Clear thinking before code.</h2></div><p class="max-w-xl self-end text-lg leading-8 text-ink/65">A structured development process keeps the project connected to the business goal and gives stakeholders visibility throughout delivery.</p></div>
+        <ol class="mt-16 grid border-l border-t border-ink/20 sm:grid-cols-2 lg:grid-cols-5">
+          <li class="fade-up border-b border-r border-ink/20 p-6"><span class="font-mono text-xs text-electric">01</span><h3 class="mt-16 font-display text-xl font-semibold">Understand</h3><p class="mt-3 text-sm leading-6 text-ink/60">Clarify the problem, users, goals, and constraints.</p></li>
+          <li class="fade-up border-b border-r border-ink/20 p-6"><span class="font-mono text-xs text-electric">02</span><h3 class="mt-16 font-display text-xl font-semibold">Map</h3><p class="mt-3 text-sm leading-6 text-ink/60">Document the real workflow, decisions, and exceptions.</p></li>
+          <li class="fade-up border-b border-r border-ink/20 p-6"><span class="font-mono text-xs text-electric">03</span><h3 class="mt-16 font-display text-xl font-semibold">Architect</h3><p class="mt-3 text-sm leading-6 text-ink/60">Plan features, data, roles, integrations, and delivery.</p></li>
+          <li class="fade-up border-b border-r border-ink/20 p-6"><span class="font-mono text-xs text-electric">04</span><h3 class="mt-16 font-display text-xl font-semibold">Build</h3><p class="mt-3 text-sm leading-6 text-ink/60">Develop in focused stages with regular feedback.</p></li>
+          <li class="fade-up border-b border-r border-ink/20 p-6 sm:col-span-2 lg:col-span-1"><span class="font-mono text-xs text-electric">05</span><h3 class="mt-16 font-display text-xl font-semibold">Deliver</h3><p class="mt-3 text-sm leading-6 text-ink/60">Test, launch, support users, and improve with evidence.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-20 overflow-hidden bg-ink text-white">
+      <div class="mx-auto grid max-w-7xl lg:grid-cols-12">
+        <div class="fade-up px-5 py-24 sm:px-8 sm:py-32 lg:col-span-8 lg:px-12">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky">06 / Contact</p>
+          <h2 class="mt-6 max-w-4xl font-display text-5xl font-bold leading-[.95] tracking-[-0.055em] sm:text-7xl lg:text-8xl">Let’s build something that actually works.</h2>
+          <p class="mt-8 max-w-2xl text-lg leading-8 text-white/60">Tell me what you are building, what is slowing your team down, or which process needs a better system. I’ll help you work out a practical next step.</p>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="mailto:daud21111987@gmail.com" class="inline-flex items-center justify-center gap-2 bg-sky px-6 py-4 font-mono text-xs font-medium uppercase tracking-[0.14em] text-ink transition-colors hover:bg-white"><i data-lucide="mail" class="h-4 w-4"></i> Send an email</a>
+            <a href="https://wa.me/923348965346" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 border border-white/30 px-6 py-4 font-mono text-xs font-medium uppercase tracking-[0.14em] transition-colors hover:border-white hover:bg-white hover:text-ink"><i data-lucide="message-circle" class="h-4 w-4"></i> WhatsApp me</a>
+          </div>
+        </div>
+        <aside class="border-t border-white/15 px-5 py-12 sm:px-8 lg:col-span-4 lg:border-l lg:border-t-0 lg:px-10 lg:py-32">
+          <dl class="space-y-9">
+            <div><dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-sky">Email</dt><dd class="mt-2 break-all"><a class="hover:text-sky" href="mailto:daud21111987@gmail.com">daud21111987@gmail.com</a></dd></div>
+            <div><dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-sky">WhatsApp</dt><dd class="mt-2"><a class="hover:text-sky" href="https://wa.me/923348965346" target="_blank" rel="noopener noreferrer">+92 334 8965346</a></dd></div>
+            <div><dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-sky">LinkedIn</dt><dd class="mt-2"><a class="inline-flex items-center gap-2 hover:text-sky" href="https://www.linkedin.com/in/daudmurtazarind/" target="_blank" rel="noopener noreferrer">daudmurtazarind <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></dd></div>
+            <div><dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-sky">Location</dt><dd class="mt-2 leading-7 text-white/70">Karachi, Pakistan<br>Remote worldwide</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/15 bg-ink text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-sm text-white/50 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-12">
+      <p><span class="font-display font-semibold text-white">Daud Murtaza Rind</span> · Business Software Engineer</p>
+      <p>© <span id="year">2026</span> Daud Murtaza Rind. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
   <script>
+    lucide.createIcons();
+
     const header = document.getElementById("site-header");
-    const menuToggle = document.getElementById("menu-toggle");
+    const menuButton = document.getElementById("menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
-    const mobileLinks = mobileMenu.querySelectorAll("a");
+    const updateHeader = () => header.classList.toggle("nav-scrolled", window.scrollY > 12);
 
-    const updateHeader = () => {
-      if (window.scrollY > 12) {
-        header.classList.add("border-white/10", "shadow-[0_10px_30px_rgba(2,6,23,0.25)]");
-      } else {
-        header.classList.remove("border-white/10", "shadow-[0_10px_30px_rgba(2,6,23,0.25)]");
-      }
-    };
-
-    const toggleMenu = () => {
-      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", String(!expanded));
-      mobileMenu.classList.toggle("hidden");
-    };
-
-    menuToggle.addEventListener("click", toggleMenu);
-
-    mobileLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    menuButton.addEventListener("click", () => {
+      const open = mobileMenu.classList.toggle("hidden") === false;
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      menuButton.innerHTML = open ? '<i data-lucide="x" class="h-5 w-5"></i>' : '<i data-lucide="menu" class="h-5 w-5"></i>';
+      lucide.createIcons();
     });
+    mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
+      menuButton.innerHTML = '<i data-lucide="menu" class="h-5 w-5"></i>';
+      lucide.createIcons();
+    }));
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -425,13 +319,11 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.14 });
-
-    document.querySelectorAll(".fade-in").forEach((element) => observer.observe(element));
-
-    updateHeader();
-    window.addEventListener("scroll", updateHeader, { passive: true });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".fade-up").forEach((element) => observer.observe(element));
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"40d371c491bd473bb965a500111e9a86"}'></script>
   <!-- End Cloudflare Web Analytics -->
