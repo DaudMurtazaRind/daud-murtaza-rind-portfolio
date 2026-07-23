@@ -5,8 +5,7 @@ Minimal static portfolio website built with pure HTML and Tailwind CSS via CDN.
 ## Files
 
 - `index.html` - complete single-page website
-- `assets/daud-murtaza-rind-portrait.jpg` - optimized portfolio portrait
-- `assets/daud-murtaza-rind-social.png` - social sharing preview image
+- `assets/daud-murtaza-rind-original.jpg` - original supplied portfolio photograph
 - `robots.txt` - search engine crawl instructions
 - `sitemap.xml` - sitemap for search engines
 - `README.md` - local run and deployment instructions
